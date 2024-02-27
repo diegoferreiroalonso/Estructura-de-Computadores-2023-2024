@@ -23,19 +23,18 @@ public class TravelArrayImpl implements Travel {
 		
 	
 	
-   public TravelArrayImpl(Date date, int nSeats){
-	   //TODO 
-	   // utiliza los precios por defecto: DEFAULT_PRICE y DEFAULT_DISCOUNT definidos en esta clase
-	   //debe crear el array de asientos
-	   
-   }
+	public TravelArrayImpl(Date date, int nSeats){
+	    this.travelDate = date;
+	    this.nSeats = nSeats;
+	    this.price = DEFAULT_PRICE;
+	    this.discountAdvanceSale = DEFAULT_DISCOUNT;
+	    this.seats = new Seat[nSeats];
+	}
    
    
-   public TravelArrayImpl(Date date, int nSeats, Double price, Byte discount){
-	   //TODO 
-	   // Debe crear el array de asientos
-	   
-   }
+	public TravelArrayImpl(Date date, int nSeats, Double price, Byte discount){
+	    this.seats = new Seat[nSeats];
+	}
 
 
 
