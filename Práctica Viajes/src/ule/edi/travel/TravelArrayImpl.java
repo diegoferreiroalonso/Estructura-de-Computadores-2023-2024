@@ -44,7 +44,7 @@ public class TravelArrayImpl implements Travel {
 @Override
 public Byte getDiscountAdvanceSale() {
 	// TODO Auto-generated method stub
-	return 0;
+	return this.discountAdvanceSale;
 }
 
 
@@ -72,7 +72,7 @@ public int getNumberOfAdvanceSaleSeats() {
 @Override
 public int getNumberOfSeats() {
 	// TODO Auto-generated method stub
-	return 0;
+	return this.nSeats;
 }
 
 
