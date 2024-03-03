@@ -1,8 +1,13 @@
 #include <stdio.h>
 
-void suma_n_numeros(int num) {
+void suma_n_numeros_nums(int num) {
     int i;
-    for ()
+    int suma = 0;
+    for (i = 1; i <= num; i++) {
+        suma += i;
+    }
+
+    printf("La suma de los primeros %d números enteros es: %d\n", num, suma);
     
 }
 
@@ -11,14 +16,13 @@ int main() {
     int num;
 
     printf("Escriba un número: ");
-    scanf("%d", num);
+    scanf("%d", &num);
 
     if (num >= 0) {
-        printf("El número es positivo");
+        suma_n_numeros_nums(num);
     } else {
         printf("Error, introduzca un número positivo");
-        scanf("%d", num);
     }
 
-    suma_n_numeros(num);
+    return 0;
 }
