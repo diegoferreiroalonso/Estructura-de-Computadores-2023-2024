@@ -9,10 +9,7 @@ int menu(){
     printf("Salir(3)\n");
     printf("\nEliga una opción: ");
     scanf("%d", &seleccion);
-
-    while (seleccion < 1 && seleccion > 3) {
-        printf("Error, introduzca un valor correcto");
-    }
+    return seleccion;
 }
 
 int media() {
@@ -41,7 +38,7 @@ int media() {
     return resultado;
 }
 
-int desviación() {
+int desviacion() {
     
     int num1, num2, num3, num4, num5, media;
     float resultado;
@@ -73,6 +70,7 @@ int desviación() {
 int main() {
 
     int interfaz = menu();
+    
     printf("\nLa opción elegida es: %d\n\n", interfaz);
 
     switch (interfaz) {
@@ -80,7 +78,12 @@ int main() {
             media();
         break;
         case 2:
-            desviación();
+            desviacion();
+        case 3:
+            printf("Saliendo ...");
+        break;
+        default:
+            printf("Error, introduzca un valor correcto");
     }
 
     return 0;
