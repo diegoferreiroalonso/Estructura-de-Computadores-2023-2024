@@ -2,4 +2,4 @@
 ### Año 2023 - 2024
 
 ## Información
-Este es un repositorio para subir las prácticas de C de Estructura de Computadores
+Este es un repositorio para subir las prácticas de C y de Python de Estructura de Computadores
