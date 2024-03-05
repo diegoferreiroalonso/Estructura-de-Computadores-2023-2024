@@ -6,5 +6,14 @@ Este es un repositorio para subir las prácticas de C y de Python de Estructura 
 
 ## Prácticas de C
 
+Realizadas:
+- Práctica 1
+- Práctica 2
+- Práctica 3
+- Práctica 4
+- Práctica 5
+
 ## Prácticas de Python
-![El logotipo de el lenguaje de programación Python](https://www.svgrepo.com/svg/376344/python)
+
+Realizadas:
+- Práctica 6
