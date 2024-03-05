@@ -7,4 +7,4 @@ Este es un repositorio para subir las prácticas de C y de Python de Estructura 
 ## Prácticas de C
 
 ## Prácticas de Python
-![El logotipo de el lenguaje de programación Python](https://myoctocat.com/assets/images/base-octocat.svg)
+![El logotipo de el lenguaje de programación Python](https://www.svgrepo.com/svg/376344/python)
