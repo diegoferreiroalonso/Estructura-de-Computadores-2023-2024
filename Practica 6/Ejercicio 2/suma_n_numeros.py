@@ -12,6 +12,5 @@ def main():
         
     suma_n_primeros_nums(num)
     
-    
 if __name__ == "__main__":
     main()
