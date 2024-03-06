@@ -27,6 +27,7 @@ int main() {
     
     while (num <= 0) {
         printf("Error, introduzca un número positivo");
+        printf("\nEscriba un número: ");
         scanf ("%d", &num);
     }
 
