@@ -16,7 +16,7 @@ def volumen_cono(rad, alt):
     print("\nEl volumen de un cono de radio",rad,"y de altura",alt,"es:",res)
     
 def volumen_ortoedro(ari):
-    res = (1/3) * math.sqrt(2) * (ari ** 3)
+    res = (ari ** 3)
     print("\nEl volumen de un octoedro de arista",ari,"es :",res)
 
 def main():
