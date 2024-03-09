@@ -1,5 +1,5 @@
 def imprime_pares_intervalo(num1, num2):
-    cont = 0
+
     for i in range (num1, num2 + 1):
         if (i % 2 == 0):
             print("\nLos números pares que hay entre",num1,"y",num2,"son:", i, end=" ")
