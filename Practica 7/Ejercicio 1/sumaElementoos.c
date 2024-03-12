@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int vector(int vec[10]) {
+void vector(int vec[10]) {
 
     for (int i = 0; i < 10; i++) {
         vec[i] = rand() % (10 + 1);
