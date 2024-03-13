@@ -2,9 +2,9 @@ class Alumno:
     
     def __init__(self, nombre, nota):
         
-        self.nombre = str(input("\nIntroduzca un nombre: "))
+        self.nombre = nombre
         
-        self.nota = int(input("\nIntroduzca una nota: "))
+        self.nota = nota
         
     def mostrarNombre(self):
         
@@ -17,15 +17,21 @@ class Alumno:
         print(self.nota)
         
     def CalculaNotaLiteral(self):
-        if self < 0 or self > 10:
-            print("\nError, introduzca una nota valida")
-        elif self < 5:
+        if self.nota > 10 or self.nota < 0:
+            print("\nNota no valida")
+        if self.nota < 5:
             print("\nSuspenso")
-        elif self  < 7:
+        elif self.nota < 7:
             print("\nAprobado")
-        elif  self < 9:
+        elif self.nota < 9:
             print("\nNotable")
-        else:
+        elif self.nota < 11:
             print("\nSobresaliente")
             
-    CalculaNotaLiteral(self)
+nombre = input("\nIntroduzca un nombre: ")
+nota = float(input("\nIntroduzca una nota: "))
+alumno = Alumno(nombre, nota)        
+
+alumno.mostrarNombre()
+alumno.mostrarNota()
+alumno.CalculaNotaLiteral()
