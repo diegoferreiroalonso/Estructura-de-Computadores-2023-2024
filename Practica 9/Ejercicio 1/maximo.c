@@ -2,15 +2,15 @@
 #include <stdlib.h>
 
 int calculamaxima(int *vec, int ite) {
-    int num = *vec;
+    int max = *vec;
 
     for (int i = 0; i < ite; i++) {
-        if (*(vec + i) > num) {
-            num = *(vec + i);
+        if (*(vec + i) > max) {
+            max = *(vec + i);
         }
     }
 
-    return num;
+    return max;
 }
 
 int main() {
