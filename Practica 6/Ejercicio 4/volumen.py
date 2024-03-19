@@ -1,21 +1,24 @@
-import math
+import math # Importa [import] el paquete "math", que tiene funciones específicas
 
-def menu():
-    print("\nCalculadora")
-    print("\nMenú:")
-    print("\nCono (1)")
-    print("Ortoedro(2)")
-    print("Salir(3)")
+def menu(): # Define una función llamada "menu" 
     
-    seleccion = (int(input("\nEiga una opción: ")))
+    print("\nCalculadora") # Imprime el mensaje en la consola
+    print("\nMenú:") # Imprime el mensaje en la consola
+    print("\nCono (1)") # Imprime el mensaje en la consola
+    print("Ortoedro(2)") # Imprime el mensaje en la consola
+    print("Salir(3)") # Imprime el mensaje en la consola
     
-    return seleccion
+    seleccion = (int(input("\nEiga una opción: "))) # Imprime el mensaje por pantalla [" "], guarda los datos que introduce el usuario [input] de tipo númerico [int] y lo almacena en la variable "seleccion"
+    
+    return seleccion # Valor que devulve la función
 
-def volumen_cono(rad, alt):
-    res = (math.pi * (rad ** 2) * alt)/3
-    print("\nEl volumen de un cono de radio",rad,"y de altura",alt,"es:",res)
+def volumen_cono(rad, alt): # Define la función "volumen_cono" que tiene como parámetros el radio "rad" y la altura "alt"
+    
+    res = (math.pi * (rad ** 2) * alt)/3 # Aplicando una formula se hacen los calulos y se guardan en la variable "res"
+    print("\nEl volumen de un cono de radio",rad,"y de altura",alt,"es:",res) # Imprime el mensaje en la consola con las variables
     
 def volumen_ortoedro(ari):
+    
     res = (ari ** 3)
     print("\nEl volumen de un octoedro de arista",ari,"es :",res)
 
@@ -37,5 +40,4 @@ def main():
     elif interfaz == 3:
         print("\nSaliendo ...")
 
-if __name__ == "__main__":
-    main()
+main()
