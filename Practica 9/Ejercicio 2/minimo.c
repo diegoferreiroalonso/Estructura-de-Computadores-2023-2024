@@ -23,6 +23,7 @@ int calculaminimo(int **mat, int fil, int col) {
     }
 
     return min;
+
 }
 
 int main() {
@@ -75,4 +76,5 @@ int main() {
     free(mat);
 
     return 0;
+    
 }

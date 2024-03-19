@@ -22,10 +22,11 @@ int main() {
     printf("\nLa matriz identidad es: \n");
     for(int i = 0; i < 9; i++) {
         for(int j = 0; j < 9; j++) {
-            printf("%d ", mat[i][j]);
+            printf("%d  ", mat[i][j]);
         }
         printf("\n");
     }
 
     return 0;
+    
 }

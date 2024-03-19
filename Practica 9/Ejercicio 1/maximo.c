@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 int calculamaxima(int *vec, int ite) {
+    
     int max = *vec;
 
     for (int i = 0; i < ite; i++) {
@@ -11,6 +12,7 @@ int calculamaxima(int *vec, int ite) {
     }
 
     return max;
+
 }
 
 int main() {
@@ -49,4 +51,5 @@ int main() {
     free(vec);
     
     return 0;
+
 }

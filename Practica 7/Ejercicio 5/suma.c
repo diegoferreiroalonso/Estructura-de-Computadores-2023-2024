@@ -16,15 +16,20 @@ void matriz(int mat[N][N]) {
 int suma(int mat[N][N]) {
     
     int res = 0;
+
     for(int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
-            res += res + mat[i][j];
+            res += mat[i][j];
         }
     }
+
     return res;
+
 }
 
 int main() {
+
+    srand(time(NULL));
     
     int mat[N][N];
     
@@ -43,4 +48,5 @@ int main() {
     printf("\n\nLa suma de los elementos de la matriz es: %d", resultado);
     
     return 0;
+    
 }

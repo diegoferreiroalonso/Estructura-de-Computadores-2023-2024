@@ -22,10 +22,11 @@ int main() {
     printf("\nLa matriz es: \n\n");
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
-            printf("%02d ", mat[i][j]);
+            printf("%02d    ", mat[i][j]);
         }
         printf("\n");
     }
 
     return 0;
+    
 }
