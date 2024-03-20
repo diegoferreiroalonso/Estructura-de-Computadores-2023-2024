@@ -4,7 +4,7 @@ def comprobación(a, b, c):
     for i in range (a, b + 1, c):
         print(i)
     
-def main(): # Define la 
+def main(): # Define la función principal llamada "main"
     
     a = int(input("\nIntroduce un número: "))  
     
