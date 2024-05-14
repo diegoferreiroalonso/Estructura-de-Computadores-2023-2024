@@ -12,6 +12,7 @@ int multiplicar(int dec);
 int dividir(int dec);
 void salir();
 void desarrollador();
+void fernando();
 
 void introduccion() {
 
@@ -19,7 +20,7 @@ void introduccion() {
     printf("\n\t| Calculadora |");
     printf("\n\t---------------" "\x1b[0m");
 
-    printf("\x1b[33m" "\n\nTip: Los números decimales se escriben utilizando el ." "\x1b[0m");
+    printf("\x1b[33m" "\n\nTip: Los números decimales se escriben utilizando el punto (.)" "\x1b[0m");
 
 }
 
@@ -60,11 +61,19 @@ int menu() {
 
         if (opc == 24) {
 
-        desarrollador();
+            desarrollador();
 
-        break;
+            break;
 
         } 
+
+        if (opc == 33) {
+
+            fernando();
+
+            break;
+
+        }
 
         printf("\x1b[31m" "\nError, introduce un número válido: " "\x1b[0m");
         scanf("%d", &opc);
@@ -200,9 +209,61 @@ void desarrollador() {
 
     printf("\nInformación:");
     printf("\nAutor: Diego Ferreiro Alonso");
-    printf("\nVersión: 1.1");
+    printf("\nVersión: 1.2");
     printf("\nÚltima actualización: 14/5/2024");
     printf("\nFecha actual: %s", fecha_actual);
+
+}
+
+void fernando() {
+
+    printf("\033[0;34m"); 
+    printf("\nEl Nano es una bala azul que sin cañón");
+    printf("\nDispara en un circuito directo al corazón");
+    printf("\nEl Nano no es humano, el Nano es inmortal");
+    printf("\nY sale en las revistas junto a Hulk y superman");
+
+    printf("\033[0;33m"); 
+    printf("\n\nEl Nano es un gigante en un cuerpo de mortal");
+    printf("\nY nadie le echa el guante, nadie lo puede alcanzar");
+
+    printf("\033[0;34m"); 
+    printf("\n\nEl Nano aae, el Nano aao no quiero a Barrichello");
+    printf("\nSchumacher ni al Button porque es el Nano");
+    printf("\nQuien llena a todos de ilusión");
+    printf("\nCuando se sube en su Renault");
+    printf("\n¡Magic Alonso!");
+
+    printf("\033[0;33m"); 
+    printf("\n\nEl Nano es buena gente, es un tío enrollao");
+    printf("\nY dentro del circuito es el que parte el bacalao");
+    printf("\nFernando te queremos por solo una razón");
+    printf("\nCoges un día negro y nos lo llenas de emoción");
+
+    printf("\033[0;34m"); 
+    printf("\n\nFernando es un gigante en un cuerpo de mortal");
+    printf("\nY nadie le echa el guante, nadie lo puede alcanzar");
+
+    printf("\033[0;33m"); 
+    printf("\n\nEl Nano aae, el Nano aao no quiero a Barrichello");
+    printf("\nSchumacher ni al Button porque es el Nano");
+    printf("\nQuien llena a todos de ilusión");
+    printf("\nCuando se sube en su Renault");
+    printf("\n¡Magic Alonso!");
+
+    printf("\033[0;34m"); 
+    printf("\n\nEl nano no nos falla si hay anuncios no te vayas");
+    printf("\nPorque él siempre da la talla");
+    printf("\nDa igual el puesto que salga no se arruga, no defrauda, no se encoge");
+    printf("\nPorque no conoce el miedo");
+
+    printf("\033[0;33m"); 
+    printf("\n\nSe cayó de pequeño en una marmita de sidra");
+    printf("\nY desde entonces no le frenan ni con pura criptonita");
+    printf("\nPorque el Nano es para el pueblo y por el pueblo");
+    printf("\nSin dudarlo, el rey del viento");
+
+    printf("\033[0m"); 
 
 }
 
