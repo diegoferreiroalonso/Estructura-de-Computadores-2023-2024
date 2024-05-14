@@ -200,7 +200,7 @@ void desarrollador() {
 
     printf("\nInformación:");
     printf("\nAutor: Diego Ferreiro Alonso");
-    printf("\nVersión: 1.0");
+    printf("\nVersión: 1.1");
     printf("\nÚltima actualización: 14/5/2024");
     printf("\nFecha actual: %s", fecha_actual);
 
