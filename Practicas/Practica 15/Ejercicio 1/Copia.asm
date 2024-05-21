@@ -4,6 +4,7 @@
 cad1: .zero 100
 cad2: .zero 100
 tex1: .string "Introduce una cadena: "
+let: .byte 'a'
     
     .globl main
     .text
@@ -14,34 +15,45 @@ main:
 	la a0, tex1
     ecall
     
-    li a7, 8 # Escribe la cadena
-    la a2, cad1
+    li a7, 8 # Escribe la cadena origen
     la a0, cad1
     li a1, 100
     ecall
     
+    la a2, cad2
+    
     jal x1, copia # Llamada a la función
+    
+    li a7, 1
+    ecall
+    
+    li a7, 10
+    ecall
     
 fin:
 
-	li a7, 10 # Salir
-    ecall
+	mv a0, t5
+    ret
     
 copia:
 
-	la a2, cad1
-    la a3, cad2
-    mv a3, a2
-    li t1, 97
-    lb t2, 0(a2)
-    beq t1, t2, contador
-    bne t2, zero, copia
-    ret
+	li t0, 0
+    li t5, 0
+    
+bucle:
+
+    lb t3, 0(a0)
+	la a4, let
+	lb t4, 0(a4)
+    beq t3, zero, fin
+    sb t3, 0(a2)
+    addi a0, a0, 1
+    addi a2, a2, 1
+    addi t0, t0, 1
+	beq t3, t4, contador
+    j bucle
 
 contador:
 
-	addi t2, t2, 1
-	li t0, 0 #Inicialización del contador
-    addi t0, t0, 1 # Contador
-    j copia
-    
+	addi t5, t5, 1
+    j bucle
